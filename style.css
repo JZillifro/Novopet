@@ -1,10 +1,55 @@
-html {
-  width: 500px;
-  height: 500px;
-}
 button {
   height: 10%;
   width: 30%;
   border-radius: 5px;
   background-color: #99BBDD;
+}
+body {
+  font-family: "Lucida Console", Courier, monospace;
+  width: 600px;
+  height: 600px;
+    perspective: 600px;
+  margin:0px !important;
+}
+.room {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.room_wall {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: #505050;
+}
+.room_wall-right {
+  transform: translateZ(-300px) rotateY(90deg) translateZ(300px);
+}
+.room_wall-back {
+  transform: translateZ(-600px) rotateY(180deg);
+}
+.room_wall-left {
+  transform: translateZ(-300px) rotateY(-90deg) translateZ(300px);
+}
+.room_wall-top {
+  transform: translateZ(-300px) rotateX( 90deg) translateZ(300px);
+}
+.room_wall-bottom {
+  transform: translateZ(-300px) rotateX(-90deg) translateZ(300px);
+}
+.wall_shade-bottom {
+  opacity: 0.45;
+}
+.wall_shade-right {
+  opacity: 0.35;
+}
+.wall_shade-back {
+  opacity: 0.25;
+}
+.wall_shade-left {
+  opacity: 0.15;
+}
+.wall_shade-top {
+  opacity: 0.05;
 }
