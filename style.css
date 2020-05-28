@@ -21,6 +21,8 @@ body {
   position: absolute;
   width: 600px;
   height: 600px;
+}
+.wall_shade {
   background-color: #505050;
 }
 .room_wall-right {
