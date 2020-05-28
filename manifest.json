@@ -2,7 +2,16 @@
   "name": "Novopet",
   "version": "1.0",
   "description": "Your personal web companion!",
-
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+  {
+    "matches": ["http://*/*"],
+    "js": ["popup.js"]
+  }
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "visit your Novopet"

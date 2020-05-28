@@ -8,7 +8,7 @@ body {
   font-family: "Lucida Console", Courier, monospace;
   width: 600px;
   height: 600px;
-    perspective: 600px;
+  perspective: 600px;
   margin:0px !important;
 }
 .room {
@@ -54,4 +54,8 @@ body {
 }
 .wall_shade-top {
   opacity: 0.05;
+}
+.wall_block {
+  width: 20%;
+  height: 20%;
 }
